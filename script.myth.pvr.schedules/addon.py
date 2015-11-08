@@ -54,14 +54,6 @@ class KodiGUI(pyxbmct.AddonFullWindow):
         self.set_info_controls()
         self.set_active_controls()
         self.set_navigation()
-        # Setup Myth Backend API
-        self.__MythBE_ = myth_api.MythBackendAPI(_settings_.getSetting(id="myth_host"),
-                                                 _settings_.getSetting(id="api_port"),
-                                                 _settings_.getSetting(id="client_security_pin"),
-                                                 _settings_.getSetting(id="date_format"),
-                                                 _settings_.getSetting(id="time_format"),
-                                                 _settings_.getSetting(id="request_size"))
-
         self.current_recording_rule_dict = {}        # Current rule for editing.
         self.__selected_list_index = ''              # Displaying corresponding programs - focus/schedule change.
         self.__control_focus = ''                    # For returning focus to control after update.
@@ -1553,6 +1545,14 @@ if __name__ == '__main__':
     if debug_mode:
         debug_log('validate_settings')
     validate_settings()
+
+    # Setup Myth Backend API
+    MythAPI = myth_api.MythBackendAPI(_settings_.getSetting(id="myth_host"),
+                                      _settings_.getSetting(id="api_port"),
+                                      _settings_.getSetting(id="client_security_pin"),
+                                      _settings_.getSetting(id="date_format"),
+                                      _settings_.getSetting(id="time_format"),
+                                      _settings_.getSetting(id="request_size"))
 
     # If the option to Wake on LAN is selected - validate settings and wake.
     if _settings_.getSetting(id="wake_on_lan") == 'true':
