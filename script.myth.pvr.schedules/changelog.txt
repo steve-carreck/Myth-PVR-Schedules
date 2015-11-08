@@ -1,0 +1,20 @@
+v0.1.0 
+- Initial version.
+
+v0.2.0
+See discussion: http://forum.kodi.tv/showthread.php?tid=221512&pid=2097252#pid2097252
+- This version functions differently. Queries to Myth backend are done only as needed, and in smaller chunks.
+- Now using json in place of xml for efficiency.
+- Simplified Myth client (Used to monitor schedule updates).
+- Use Myth client to detect initial connection status instead of Myth Services API.
+- Simplified initial connect timeout logic.
+- Fixed possibility of memory leak in saving previous control focus method.
+- Added call-sign to recording setting 'This Channel' to give context. E.g. 'This Channel (ABC)'
+- Recording options separated into standard & advanced.
+- Added recording option 'Recording Group'.  Add a new group either via the option - (These will remain so long as one reference exists.) Or select from a static 'Recording groups' list created in settings.  Separate with a comma, no spaces.
+- Set the focus back to the previous recording list item after back from options.
+- Removed demo mode.
+- Added detect & notify if schedule changed by another client etc.
+
+
+

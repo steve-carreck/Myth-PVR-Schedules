@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.myth.pvr.schedules"
+   name="Myth PVR Schedules"
+   version="0.2.0"
+   provider-name="Steve Carreck (DEBUG)">
+  <requires>
+      <import addon="xbmc.python" version="2.1.0"/>
+      <import addon="script.module.pyxbmct" version="1.1.4"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Alternate Timer view &amp; editor for Myth PVR.</summary>
+    <description lang="en">A two pane view displays recording schedules and program showings per schedule.[CR][CR]Click on a recording schedule to edit preferences such as a series recording, and on a program showing to disable it for resolving conflicts etc.[CR]Add the initial recording from the guide and then use Myth PVR Schedules to edit preferences.</description>
+	<disclaimer lang="en">Use with Myth backend version .27, Kodi Myth PVR add-on, Python 2.7  At own risk.</disclaimer>
+	<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+  </extension>
+</addon>

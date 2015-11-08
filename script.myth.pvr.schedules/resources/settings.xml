@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <!-- Connection -->
+  <category label="30000">
+    <setting id="myth_host" type="text" label="30001" default="?" />
+    <setting id="api_port" type="number" option="number" label="30002" default="6544" />
+    <setting id="client_port" type="number" option="number" label="30003" default="6543" />
+	<setting id="client_security_pin" type="number" label="30004" default="0000" />
+	<setting id="date_format" type="labelenum" label="30005" values="DD-MM-YYYY|YYYY-MM-DD|MM-DD-YYYY" default="DD-MM-YYYY" />
+	<setting id="time_format" type="labelenum" label="30006" values="12Hr|24Hr" default="12Hr" />
+    <setting id="static_rec_groups" type="text" label="30011" default="Comedy,Drama,Sci-Fi,Children" />
+	</category>
+
+  <!-- advanced -->
+  <category label="30007">
+    <setting id="block_myth_pvr_shutdown" type="bool" label="30008" default="true" />
+    <setting id="wake_on_lan" type="bool" label="30009" default="false" />
+	<setting id="wake_on_lan_address" type="text" label="30010" default="?" />
+    <setting id="connection_timeout_seconds" type="number" option="number" label="30012" default="120" />
+    <setting id="request_size" type="number" option="number" label="30014" default="10" />
+	<setting id="reset_settings" type="bool" label="30013" default="false" />
+	<setting id="debug" type="bool" label="30015" default="false" />
+  </category>
+
+  <!-- Advanced 2 -->
+  <category label="30016">
+    <setting id="UserJob1" type="text" label="30017" default="User Job 1" />
+    <setting id="UserJob2" type="text" label="30018" default="User Job 2" />
+    <setting id="UserJob3" type="text" label="30019" default="User Job 3" />
+    <setting id="UserJob4" type="text" label="30020" default="User Job 4" />
+  </category>
+</settings>
